@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Domine:wght@400;500;600;700&family=Yantramanav:wght@100;500;900&display=swap');
+*{/*se resetea los valores*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.encabezado{/*acomodando el header para todas las paginas*/
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+    background-color:rgba(0, 0, 0, 0.9);
+    padding: 10px;
+    position: sticky;
+    top: 0;
+            .imglogo{ /*logo y nav en mimsa linea pero separado*/
+            display: flex;
+            height: 100px;
+            
+            
+                    }
+            .linknav{ /*se acomoda navegacion y se le da propiedades*/
+                    align-items: center;
+                    text-decoration: none;
+                    color:white;
+                    justify-content: space-between;
+                    margin-top: 30px;
+                    margin-right: 50px;
+                    font-family: 'Alef', sans-serif;
+                    font-size: 20px;
+                    }
+}
+
+
+nav{
+    margin-top: 35px;
+}
+
+.linknav:hover{
+    color: #1561f0;    
+}
+
+.div1{ /*aqui se estila el titulo principal con su parrafo */
+    height: 1150px;
+    width: 100%;
+    border: 2px solid #ccc;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 100px;
+    text-align: center;
+    background-color:#14213d;
+    .imgfondo{
+                display: flex;
+                background-repeat: no-repeat;
+                height: auto;
+                width: auto;
+                border-radius: 15px;
+                background-position:left center;
+             }
+    .tituloprincipal{/*estilos al titulo*/
+                        font-family:'Domine',sans-serif;
+                        font-size: 100px;
+                        text-align: center;
+                        color: #fca311;
+                     }
+   .contenedorparrafo{
+       text-align: center;
+       justify-content: center;
+       text-align:right; 
+    }
+    .parrafo{ /*estilos al parrafo del titulo principal*/
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 1.5rem ;
+    text-align: right; /*no pude centrar el parrafo como queria*/
+    color: white;
+    margin-top: -700px;
+    margin-left: 800px;
+    text-align: center;
+    line-height: 2;
+        .destacado{
+            color:#1561f0;
+            }
+}
+ }
+.div2{
+    height: 500px;
+    width: 100%;
+    border: 2px solid #ccc;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 100px;
+    background-color:#14213d;
+    .titulosecundario{
+        font-family: 'Domine', serif;
+        font-size: 35px;
+        justify-content: center;
+        text-align: center;
+        color: white;
+    }
+    .video{
+        margin-top: 50px;
+        margin-left: 330px;
+      justify-content: center;
+      align-items: center;
+      height: 400px;
+      width: 900px;
+    }
+    
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra horizontalmente los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    gap: 40px;
+    border-top: solid 2px #2b2b2b;
+    border-bottom: solid 2px #2b2b2b;
+    padding:50px; /* Agregamos un espacio interior al contenedor */
+    margin-top: 120px;
+    .fotos{
+        height: 400px;
+        width: 500px;
+        border-radius: 10%;
+        transition: transform 0.3s;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+    }
+}
+.container .fotos:hover {
+    transform: scale(1.1); }
+.footer{/*se estila el footer para todas las paginas*/
+    background-color:rgba(0, 0, 0, 0.7);
+    height: 110px;
+    margin-top: 1300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+        .imgfooter{
+                height: 4em;
+            }     
+            .pfooter{
+                text-align: center;
+                color: #e5e5e5;
+                font-size: 1.5rem;
+            }   
+ 
+}
+.footer a { 
+    font-size: 25px;
+    margin-right: 10px;
+    
+    }
+    .diviconos{
+            .iconos{
+                        font-size: 3rem;
+                      
+                    }
+    
+}
+.wapp{ /*icono de whastap  movible*/ 
+    font-size: 3rem;
+    position: fixed;
+    bottom: 33px;
+    right: 10px; 
+    z-index: 1000;
+    color: rgb(7, 243, 7);
+    }
+.wapp:hover{
+    color:rgba(7, 215, 7, 0.884) ;
+}
+/************************************responsive del index*****************************************/
+/* Estilos para pantallas pequeñas (menor a 767px de ancho) */
+@media (max-width: 1000px) {
+    .encabezado {
+        display: grid;
+       flex-direction: column;
+       height: auto;
+       justify-content: center;
+       position: relative;
+
+    }
+    .imglogo {
+        height: 80px;
+        margin: auto;
+    }
+    .linknav {
+        display: grid;
+        flex-direction: column;
+        grid-template-columns: repeat(1fr);
+        
+    }
+    .div1 {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        
+
+    }
+    .imgfondo {
+        border-radius: 5%;
+        height: 400px;
+        width: 100px;
+
+      
+    }
+    .tituloprincipal {
+        font-size: 0.5em;
+       
+    }
+    .contenedorparrafo{
+        margin: left;
+    }
+    .parrafo {
+        border:  solid 1px #2b2b2b;
+        margin:-800px;
+        margin-right: -800px;
+        font-size: 16px;
+      
+    }
+    .div2 {
+        height: auto;
+        margin-top: 30px;
+    }
+    .video {
+        margin-top: 20px;
+        margin-left: 0;
+        height: auto;
+        width: 100%;
+    }
+    .container {
+        margin-top: 20px;
+    }
+}
+    /********************************Aqui comienza la pagina galeria**********************************/
+   
+    .carrusel{
+      height: 500px;
+      width: 100%;
+      object-fit: cover;
+    }
+    #galeria img{
+        width: 100%;
+        height: 300px;
+        border-radius: 5%;
+        box-shadow:5px 5px 10px #2b2b2b;
+    }
+    #galeria .col-lg-4{
+        padding: 25px;
+    
+    }
+    #galeria img:hover{
+        border: 5px solid #fca311;
+    }
+.secgaleria{
+    width: 100%;
+    background-color: #e5e5e5;
+}
+.bodygaleria{
+    background-color: #e5e5e5;
+}
