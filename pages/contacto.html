@@ -10,17 +10,34 @@
     <link rel="stylesheet" href="/index.css">
 </head> 
 <body>
-    <header class="encabezado">
-        <img class="imglogo" src="../asset/Imagenes/logo fondo transparente-2.png" alt="LaQuerencia">
-        <nav>
-            <ul>
-                <a class="linknav" href="/index.html"><strong>Inicio</a> </strong>
-                <a class="linknav"  href="nosotros.html"><strong>Nosotros</a></strong>
-                <a class="linknav"  href="picadas.html"><strong>Picadas</a> </strong>
-                <a class="linknav"  href="galeria.html"><strong>Galeria</a></strong>
-                <a class="linknav"  href="#"><strong>Contactanos</a></strong>
-            </ul>
-        </nav>
+    <header class="header encabezado">
+        <img class="imglogo" src="../asset/Imagenes/logo fondo transparente-2.png" alt="LaQuerencia" loading="lazy">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand linknav" href="/index.html">Inicio</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="currentColor" class="bi bi-list boton" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                  </svg>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active linknav" aria-current="page" href="/pages/nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link linknav" href="/pages/picadas.html">Picadas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link linknav" href="/pages/galeria.html">Galeria</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link linknav" href="#">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
     <main>
         <h1>contacto</h1>
@@ -49,17 +66,42 @@
             </div>
         </form>
     </main>
-    <footer class="footer">
-        <img class="imgfooter" src="../asset/Imagenes/logo fondo transparente-2.png" alt="LaQuerencia" loading="lazy">
-        <p class="pfooter">Lunes a sabados <br> 9 a 13 <br>17 a 22 </p>
-        <p class="pfooter">Domingos <br> 9:30 a 13:30 <br>18 a 22 </p>
-        <div class="diviconos">
-            <a href="https://www.facebook.com/profile.php?id=100041897955922&locale=es_LA" target="_blank"><i class="fa-brands fa-facebook iconos"></i></a>
-            <a href="https://www.instagram.com/laquerencia_almacen/" target="_blank"><i class="fa-brands fa-instagram iconos"></i></a>
-            <a href="" target="_blank"> <i class="fa-brands fa-whatsapp iconos"></i></a>
+    <footer class="text-white pt-5 pb-4 footer">
+        <div class="container text-center">
+            <div class="row text-center">
+                   <div class="text-center">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a href="" class="text-dark"><i class="fab fa-facebook wapp"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="" class="text-dark"><i class="wapp fab fa-instagram"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="" class="text-dark"><i class="wapp fa fa-whatsapp"></i></a>
+                            </li>
+                            </ul>
+                    </div> 
+                <div class="col-md-3 col-lg-12 col-xl-12 mx-auto mt-3">
+                    <h5 class="text-uppercase"><p><u>Lunes a sabados</u></h5> <br><h6> 9 a 13 <br>17 a 22 </h6></p>
+                    <p><h5><u>Domingos</u></h5> <br> <h6> 9:30 a 13:30 <br>18 a 22 </h6></p>
+                    <hr class="mb-4">
+            
+                  
+                    <div class="text-center mb-2 text-danger">
+                            <p>@Copyright Todos los derechos reservados<br>
+                                <p class="texte-center mb-2"> Gadañotti Leandro</p>
+
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
         </div>
-    </footer>
-    <a href="" target="_blank"> <i class="fa-brands fa-whatsapp wapp"></i></a>
+
+</footer>
+
     <script src="/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

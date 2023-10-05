@@ -4,43 +4,39 @@
     padding: 0;
     box-sizing: border-box;
 }
+.grilla{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr auto 0.2fr;
+    grid-area: "header"
+                "main"
+                "footer";
+    }
 .encabezado{/*acomodando el header para todas las paginas*/
     display: flex;
     justify-content: space-between;
     height: 120px;
     background-color:rgba(0, 0, 0, 0.9);
-    padding: 10px;
     position: sticky;
     top: 0;
-            .imglogo{ /*logo y nav en mimsa linea pero separado*/
-            display: flex;
-            height: 100px;
             
-            
-                    }
             .linknav{ /*se acomoda navegacion y se le da propiedades*/
-                    align-items: center;
-                    text-decoration: none;
+
                     color:white;
                     justify-content: space-between;
-                    margin-top: 30px;
-                    margin-right: 50px;
                     font-family: 'Alef', sans-serif;
-                    font-size: 20px;
+                    font-size: 1.5rem;
                     }
+    .boton{
+        background-color: #1561f0;
+   }
 }
-
-
-nav{
-    margin-top: 35px;
-}
-
 .linknav:hover{
     color: #1561f0;    
 }
 
 .div1{ /*aqui se estila el titulo principal con su parrafo */
-    height: 1150px;
+   height: 1000px;
     width: 100%;
     border: 2px solid #ccc;
     justify-content: center; 
@@ -51,8 +47,8 @@ nav{
     .imgfondo{
                 display: flex;
                 background-repeat: no-repeat;
-                height: auto;
-                width: auto;
+                height: 800px;
+                width: 700px;
                 border-radius: 15px;
                 background-position:left center;
              }
@@ -76,36 +72,13 @@ nav{
     margin-left: 800px;
     text-align: center;
     line-height: 2;
+    overflow: auto;
         .destacado{
             color:#1561f0;
             }
 }
  }
-.div2{
-    height: 500px;
-    width: 100%;
-    border: 2px solid #ccc;
-    justify-content: center; 
-    align-items: center; 
-    margin-top: 100px;
-    background-color:#14213d;
-    .titulosecundario{
-        font-family: 'Domine', serif;
-        font-size: 35px;
-        justify-content: center;
-        text-align: center;
-        color: white;
-    }
-    .video{
-        margin-top: 50px;
-        margin-left: 330px;
-      justify-content: center;
-      align-items: center;
-      height: 400px;
-      width: 900px;
-    }
-    
-}
+ 
 .container{
     display: flex;
     flex-wrap: wrap;
@@ -115,7 +88,6 @@ nav{
     border-top: solid 2px #2b2b2b;
     border-bottom: solid 2px #2b2b2b;
     padding:50px; /* Agregamos un espacio interior al contenedor */
-    margin-top: 120px;
     .fotos{
         height: 400px;
         width: 500px;
@@ -129,109 +101,98 @@ nav{
 .container .fotos:hover {
     transform: scale(1.1); }
 .footer{/*se estila el footer para todas las paginas*/
-    background-color:rgba(0, 0, 0, 0.7);
-    height: 110px;
-    margin-top: 1300px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-        .imgfooter{
-                height: 4em;
-            }     
-            .pfooter{
-                text-align: center;
-                color: #e5e5e5;
-                font-size: 1.5rem;
-            }   
- 
-}
-.footer a { 
-    font-size: 25px;
-    margin-right: 10px;
-    
-    }
-    .diviconos{
-            .iconos{
-                        font-size: 3rem;
-                      
-                    }
+    background-color:rgba(0, 0, 0, 0.9);  
     
 }
+  
 .wapp{ /*icono de whastap  movible*/ 
     font-size: 3rem;
-    position: fixed;
-    bottom: 33px;
-    right: 10px; 
-    z-index: 1000;
-    color: rgb(7, 243, 7);
+     color:#013cbb;
     }
 .wapp:hover{
-    color:rgba(7, 215, 7, 0.884) ;
+    color:#1561f0;
 }
 /************************************responsive del index*****************************************/
 /* Estilos para pantallas pequeñas (menor a 767px de ancho) */
-@media (max-width: 1000px) {
-    .encabezado {
+@media (max-width: 767px) {
+    .header{
         display: grid;
+        grid-template-rows: repeat(1fr);
+        
+    }
+    /********************seccion1***************/
+
+    .encabezado {
+       display: grid;
        flex-direction: column;
        height: auto;
        justify-content: center;
-       position: relative;
-
     }
     .imglogo {
         height: 80px;
         margin: auto;
     }
-    .linknav {
-        display: grid;
-        flex-direction: column;
-        grid-template-columns: repeat(1fr);
-        
-    }
     .div1 {
-        margin-top: 60px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        
-
+    margin-top: 1100px;
+    background-color: #14213d;
+    height: 100vh;
     }
+    .tituloP{
+        background-color: #14213d;    }
     .imgfondo {
+        max-width: 100%;
         border-radius: 5%;
-        height: 400px;
-        width: 100px;
-
-      
+        background-color: #14213d;
     }
     .tituloprincipal {
-        font-size: 0.5em;
+        margin-top:-1000px;
+        font-size: 24px;
+    
        
     }
     .contenedorparrafo{
-        margin: left;
+        margin-left: -800px;
+        margin-top: 720px;
     }
     .parrafo {
         border:  solid 1px #2b2b2b;
-        margin:-800px;
-        margin-right: -800px;
         font-size: 16px;
+       overflow: hidden;
       
     }
-    .div2 {
-        height: auto;
-        margin-top: 30px;
+.mapa{
+    height: 200px;
+
+}
+.footer{/*se estila el footer para todas las paginas*/
+    
+    height: auto;
+            .pfooter{
+                font-size: 1rem;
+            }   
+            .pfooter{
+                margin-right: 50px;
+            }
+ 
+}
+.footer a { 
+    font-size: 16px;
+    padding:20px;
+    
     }
-    .video {
-        margin-top: 20px;
-        margin-left: 0;
-        height: auto;
-        width: 100%;
+    .diviconos{
+            .iconos{
+                        font-size: 2rem;
+                      
+                    }
+    
+}
+.wapp{ /*icono de whastap  movible*/ 
+    font-size: 2rem;
+    bottom: 97px;
+    right: 35px;
     }
-    .container {
-        margin-top: 20px;
-    }
+
 }
     /********************************Aqui comienza la pagina galeria**********************************/
    
