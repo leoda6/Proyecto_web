@@ -39,32 +39,56 @@
             </div>
           </nav>
     </header>
-    <main>
-        <h1>contacto</h1>
-        <form action="404.html" method="post">
+    <main class="maincontacto">  
+        <div class="container text-center">
+                <p class="fs-1 text-uppercase">Contacto</p>
+            </div>
+        <div class="container-fluid p-5">
+        <form class="text-center" action="404.html" method="post">
             <div>
-                <label for="nombre">Nombre</label>
+                <label for="nombre" class="form-label">Nombre</label>
             </div>
             <div>
-                <input type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre" required>
+                <input class="form-control" type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre" required>
             </div>
             <div>
-                <label for="">Apellido</label>
+                <label for="apellido" class="form-label">Apellido</label>
             </div>
             <div>
-                <input type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido" required>
+                <input class="form-control" type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido" required>
             </div>
             <div>
-                <label for="email">E-mail</label>
+                <label for="email" class="form-label">Telefono</label>
+            </div>
+            
+            <div>
+                <input class="form-control" type="text" name="telefono" id="telefono" placeholder="#000000000" required>
             </div>
             <div>
-                <input type="text" name="email" id="email" placeholder="ejemplo@gmail.com" required>
+                <label for="tel" class="form-label">E-mail</label>
             </div>
+            
             <div>
-                <input type="reset" name="borrar" id="borrar" value="limpiar">
-                <input type="submit" name="enviar" id="enviar" value="enviar">
+                <input class="form-control" type="text" name="email" id="email" placeholder="ejemplo@gmail.com" required>
+            </div>
+           <div>
+            <label for="comentario" class="form-label">Comentario:</label>
+           </div>
+           
+            <div>
+                
+                <textarea class="form-control" id="comentario" name="comentario" rows="4" required>
+
+                </textarea>
+            </div>
+    
+
+            <div>
+                <input  class="form-label" type="reset" name="borrar" id="borrar" value="limpiar">
+                <input class="form-label" type="submit" name="enviar" id="enviar" value="enviar">
             </div>
         </form>
+    </div>
     </main>
     <footer class="text-white pt-5 pb-4 footer">
         <div class="container text-center">
