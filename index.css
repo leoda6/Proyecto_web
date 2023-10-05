@@ -138,7 +138,9 @@
     height: 100vh;
     }
     .tituloP{
-        background-color: #14213d;    }
+        background-color: #14213d;   
+     }
+    
     .imgfondo {
         max-width: 100%;
         border-radius: 5%;
@@ -224,4 +226,10 @@
 /*******************************Aqui comienza pagina de contacto**********************************/
 .maincontacto{
     background-color:rgba(0, 0, 0, 0.3);
+}
+@media screen and (max-width:767){
+    .versionmobile{
+        display : none !important;
+
+    }
 }
